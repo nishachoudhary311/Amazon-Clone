@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon Clone Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #EAEDED;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #131921;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+    }
+
+  .nav-logo img {
+      width: 100px;
+    }
+
+  .nav-search {
+      flex: 1;
+      margin: 0 20px;
+      display: flex;
+    }
+
+  .nav-search input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+    }
+
+  .nav-search button {
+      background-color: #febd69;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+  .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+  /* Hero Section */
+  .hero img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    /* Categories Section */
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: white;
+      flex-wrap: wrap;
+    }
+
+    .category {
+      text-align: center;
+      width: 200px;
+      margin: 10px;
+    }
+
+    .category img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    /* Deals Section */
+    .deals {
+      margin: 20px;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .deals h2 {
+      margin-bottom: 20px;
+    }
+
+    .deal-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .deal {
+      width: 200px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .deal img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .deal p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 20px;
+      background-color: #232F3E;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-logo">
+    <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+  </div>
+  <div class="nav-search">
+    <input type="text" placeholder="Search Amazon.in">
+    <button>Search</button>
+  </div>
+  <div class="nav-links">
+    <a href="#">Sign In</a>
+    <a href="#">Orders</a>
+    <a href="#">Cart</a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg" alt="Hero Banner">
+</section>
+
+<!-- Categories Section -->
+<section class="categories">
+  <div class="category">
+    <h3>Electronics</h3>
+    <img src="https://images.unsplash.com/photo-1633372938857-c86409d6cdd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBob3RvcyUyMG9mJTIwZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D">
+  </div>
+  <div class="category">
+    <h3>Fashion</h3>
+    <img src="https://images.unsplash.com/photo-1718819616289-fa0e80c23978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBob3RvcyUyMG9mJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D">
+  </div>
+  <div class="category">
+    <h3>Home & Kitchen</h3>
+    <img src="https://m.media-amazon.com/images/I/81O%2BGNdkzKL._AC_UL320_.jpg" alt="Home">
+  </div>
+  <div class="category">
+    <h3>Beauty</h3>
+    <img src="https://images.unsplash.com/photo-1708735973204-66d46048b962?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBob3RvcyUyMG9mJTIwYmVhdXR5fGVufDB8fDB8fHww">
+  </div>
+</section>
+
+<!-- Deals Section -->
+<section class="deals">
+  <h2>Deals of the Day</h2>
+  <div class="deal-items">
+    <div class="deal">
+      <img src="https://images.unsplash.com/photo-1600541519467-937869997e34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBob3RvcyUyMG9mJTIwc21hcnRwaG9uZXMlMjBuJTIwaGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D">
+      <p>Smartphone - $199</p>
+    </div>
+    <div class="deal">
+      <img src="https://images.unsplash.com/photo-1662220727289-27d6b2f10a82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBob3RvcyUyMG9mJTIwc21hcnR3YXRjaHxlbnwwfHwwfHx8MA%3D%3D">
+      <p>Smartwatch - $99</p>
+    </div>
+    <div class="deal">
+      <img src="https://images.unsplash.com/photo-1685540602621-85e75154ec56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG9zJTIwb2YlMjBzbWFydHBob25lcyUyMG4lMjBoZWFkcGhvbmVzfGVufDB8fDB8fHww">
+      <p>Headphones - $49</p>
+    </div>
+    <div class="deal">
+      <img src="https://plus.unsplash.com/premium_photo-1700053641043-8cc03ce39b29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGhvdG9zJTIwb2YlMjBqYWNrZXRzfGVufDB8fDB8fHww">
+      <p>Jackets - $59</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Get to Know Us</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Press Releases</a>
+      <a href="#">Amazon Science</a>
+    </div>
+    <div class="footer-column">
+      <h4>Connect with Us</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+    <div class="footer-column">
+      <h4>Make Money with Us</h4>
+      <a href="#">Sell on Amazon</a>
+      <a href="#">Become an Affiliate</a>
+      <a href="#">Advertise Your Products</a>
+      <a href="#">Amazon Pay</a>
+    </div>
+    <div class="footer-column">
+      <h4>Let Us Help You</h4>
+      <a href="#">Your Account</a>
+      <a href="#">Returns Centre</a>
+      <a href="#">100% Purchase Protection</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+
+  <hr style="border: 0.5px solid #555; margin: 20px 0;">
+
+  <div class="footer-bottom">
+    <p>Back to top</p>
+    <p>© 2025 Amazon Clone Project | Made by Nisha</p>
+  </div>
+</footer>
+</body>
+</html>
